@@ -3,3 +3,4 @@
 
  The code files should output the name of the user as well as the date.
 
+The C File is kind of tricky!
