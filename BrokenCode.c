@@ -7,7 +7,7 @@ int main()
     
     time_t rawtime;
     struct tm * timeinfo;
-    char buffer [80];
+    char buffer [];
 
     time (&rawtime);
     timeinfo = localtime (&rawtime);
@@ -23,8 +23,8 @@ int main()
     char str[10];
     printf("Please enter your name: ");
     scanf("%s", str);
-    getchar();
-    printf("Hello %s. \n", str);
+    getchar()
+    printf("Hello %n. \n", str);
     
     strftime (buffer,80,"The time is currently %I:%M%p.",timeinfo);
     puts (buffer);
