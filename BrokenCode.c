@@ -7,7 +7,7 @@ int main()
     
     time_t rawtime;
     struct tm * timeinfo;
-    char buffer [];
+    char buffer [80];
 
     time (&rawtime);
     timeinfo = localtime (&rawtime);
@@ -20,7 +20,7 @@ int main()
  
  
     char timeval= localtime(&(time_t){time(NULL)});
-    char str[10];
+    char str[];
     printf("Please enter your name: ");
     scanf("%s", str);
     getchar()
