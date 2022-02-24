@@ -20,11 +20,11 @@ int main()
  
  
     char timeval= localtime(&(time_t){time(NULL)});
-    char str[];
+    char str[30];
     printf("Please enter your name: ");
     scanf("%s", str);
-    getchar()
-    printf("Hello %n. \n", str);
+    getchar();
+    printf("Hello %s. \n", str);
     
     strftime (buffer,80,"The time is currently %I:%M%p.",timeinfo);
     puts (buffer);
