@@ -2,6 +2,4 @@
 now=$(date)
 echo What is your name? 
 
-read namevar
-
-echo Hello namevar the current date is $Now
+echo Hello $USER the current date is $now
